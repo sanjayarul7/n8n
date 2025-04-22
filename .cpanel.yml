@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/florespi/public_html/myn8nui
-    - /bin/cp -R images $DEPLOYPATH
+    - mkdir -p $DEPLOYPATH
+    - /bin/cp -Rf images $DEPLOYPATH/
+    - /bin/cp -f index.html $DEPLOYPATH/
+    - /bin/chmod -R 755 $DEPLOYPATH
