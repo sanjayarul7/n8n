@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home2/florespi/public_html/myn8nui
-    - /bin/cp -Rf * $DEPLOYPATH
